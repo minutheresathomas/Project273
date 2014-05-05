@@ -1,0 +1,155 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--
+Design by http://www.FreeWebsiteTemplateZ.com
+Released for free under a Creative Commons Attribution 3.0 License
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Web Voting</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link href="../../../assets/css/style.css" rel="stylesheet" type="text/css" />
+<!-- CuFon: Enables smooth pretty custom font rendering. 100% SEO friendly. To disable, remove this section -->
+<script type="text/javascript" src="../../../assets/js/cufon-yui.js"></script>
+<script type="text/javascript" src="../../../assets/js/arial.js"></script>
+<script type="text/javascript" src="../../../assets/js/cuf_run.js"></script>
+<!-- CuFon ends -->
+</head>
+<body>
+<div class="main">
+  <div class="header">
+    <div class="header_resize">
+      <div class="logo">
+        <h1><a href="index.html">Web Voting</a><small>Team Polaris</small></h1>
+      </div>
+
+      <div class="menu_nav">
+       <ul>
+        <li class="active"><a href="index"><span>Home</span></a></li>
+          <li><a href="login"><span>Login</span></a></li>
+          <li><a href="register"><span>Sign Up</span></a></li>
+         
+      </ul>  
+      		
+      		<!-- FB integration SDK -->
+        
+        <div id="fb-root"></div>
+		<script type="text/<span class="><!--mce:0--></script>
+		<script>
+			window.fbAsyncInit = function() {
+			   FB.init({appId: '627796963977885', status: true, cookie: true, xfbml: true});
+			};
+			(function() {
+			   var e = document.createElement('script');
+			   e.type = 'text/javascript';
+			   e.src = document.location.protocol + '//connect.facebook.net/en_US/all.js';
+			   e.async = true;
+			   document.getElementById('fb-root').appendChild(e);
+			}());
+		</script>
+        
+      		<fb:login-button autologoutlink='true'  perms='email,user_birthday,status_update,publish_stream'></fb:login-button>  
+      		<script>
+      		FB.Event.subscribe('auth.login', function(response) {
+			   login();
+			});
+			FB.Event.subscribe('auth.logout', function(response) {
+			   logout();
+			});
+			FB.getLoginStatus(function(response) {
+			   if (response.session) {
+			      greet();
+			   }
+			});
+			
+			function login(){
+			   FB.api('/me', function(response) {
+			      alert('You have successfully logged in, '+response.name+"!");
+			   });
+			}
+			function logout(){
+			   alert('You have successfully logged out!');
+			}
+			function greet(){
+			   FB.api('/me', function(response) {
+			      alert('Welcome, '+response.name+"!");
+			   });
+			}
+      		  </script>   
+        <div class="clr"></div>
+      </div>
+      <div class="clr"></div>
+     <video width="1000" height="480" controls autoplay loop='true'>
+  <source src="../../../assets/js/videos/bg-video.mov" type="video/mp4"><h1>Live Audience Participation</h1>
+
+  <source src="../../../assets/js/videos/bg-video.ogv" type="video/mp4"> 
+Your browser does not support video
+</video>
+      
+      
+    </div>
+  </div>
+  <div class="clr"></div>
+  <div class="content">
+    <div class="content_resize">
+      <div class="mainbar">
+        <div class="article">
+          <h2></h2>
+          <!--<img src="vote.jpg" width="613" height="179" alt="image" />-->
+          <div class="clr"></div>
+          
+        </div>
+        <div class="article" style="padding:5px 20px 2px 20px;">
+        
+        </div>
+      </div>
+      <div class="sidebar">
+      <div class="search">
+        <form id="form" name="form" method="post" action="">
+          <span>
+          <input name="q" type="text" class="keywords" id="textfield" maxlength="50" value="Search..." />
+           </span>
+          <input name="b" type="image" src="images/search.gif" class="button" />
+         
+        </form>
+      </div>
+      <!--/search -->
+        <div class="gadget">
+          <h2></h2>
+          </ul>
+        </div>
+        
+        <div class="gadget">
+          </div>
+      </div>
+      <div class="clr"></div>
+    </div>
+  </div>
+  <div class="fbg">
+    <div class="fbg_resize">
+      <div class="col c1">
+        <p>
+		<h2><span>Team Polaris</span></h2>
+         	
+		<ul>
+		<li>Minu </li>
+		<li>Navya<br/></li>
+		<li>Parin</li>
+		<li>Deeksha</li>
+		<li>ShivaDeepthi</li>
+		
+		</ul>
+		<br/>
+		</p>
+      <div class="col c2">
+      </div>
+      <div class="col c3">
+      </div>
+      <div class="clr"></div>
+    </div>
+    <div class="footer">
+      <div class="clr"></div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
